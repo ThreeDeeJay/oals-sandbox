@@ -2,10 +2,10 @@
 CXX = g++
 
 # compiler compilation flags.
-CXXFLAGS = -std=c++11 -Isrc -I../../vorbis/include -Ixiph/ogg/include -I../../openal-soft/include
+CXXFLAGS = -std=c++11 -Isrc -I../../vorbis/include -I../../ogg/include -I../../openal-soft/include
 
 # linker flags.
-LDFLAGS = -L../../vorbis/include/lib64 -Lxiph/ogg/include/lib64 -L../../openal-soft/lib64 -lopenal32 -logg.dll -lvorbis.dll -lvorbisfile.dll
+LDFLAGS = -L../../vorbis/include/lib64 -LI../../ogg/include/lib64 -L../../openal-soft/lib64 -lopenal32 -logg.dll -lvorbis.dll -lvorbisfile.dll
 
 # the path to source files.
 SRC_PATH = .
